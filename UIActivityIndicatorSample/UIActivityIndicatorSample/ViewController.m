@@ -27,6 +27,7 @@
     _indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     _indicator.frame = CGRectMake(0, 0, 50, 50);
     _indicator.center = self.view.center;
+    _indicator.hidesWhenStopped = YES;
     [self.view addSubview:_indicator];
 }
 
