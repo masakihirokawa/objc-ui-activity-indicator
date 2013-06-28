@@ -10,8 +10,8 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)play:(id)sender;
-- (IBAction)stop:(id)sender;
-- (IBAction)pause:(id)sender;
+- (IBAction)playButtonEvent:(id)sender;
+- (IBAction)stopButtonEvent:(id)sender;
+- (IBAction)pauseButtonEvent:(id)sender;
 
 @end
