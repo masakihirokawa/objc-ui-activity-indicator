@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#define INDICATOR_LARGE_SIZE 50
+#define INDICATOR_SMALL_SIZE 20
+
 @interface ViewController : UIViewController
 
 - (IBAction)playButtonEvent:(id)sender;
 - (IBAction)stopButtonEvent:(id)sender;
-- (IBAction)pauseButtonEvent:(id)sender;
 
 @end

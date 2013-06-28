@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E3067" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -38,28 +38,14 @@
                                     <action selector="stopButtonEvent:" destination="2" eventType="touchUpInside" id="L8q-Fn-sIy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gl-W7-FoD">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Pause">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pauseButtonEvent:" destination="2" eventType="touchUpInside" id="Re1-c7-QF7"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="7gl-W7-FoD" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="4kV-Hx-QB9"/>
                             <constraint firstItem="5dk-bq-QBD" firstAttribute="leading" secondItem="MxI-vc-ZM4" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="6hY-K6-Ai9"/>
                             <constraint firstAttribute="bottom" secondItem="5dk-bq-QBD" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="9LO-U6-Bdm"/>
-                            <constraint firstItem="MxI-vc-ZM4" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="9ik-Pn-jQe"/>
+                            <constraint firstItem="5dk-bq-QBD" firstAttribute="baseline" secondItem="MxI-vc-ZM4" secondAttribute="baseline" type="default" id="9UI-xa-aHw"/>
                             <constraint firstAttribute="bottom" secondItem="MxI-vc-ZM4" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="KSz-CS-xtn"/>
-                            <constraint firstItem="MxI-vc-ZM4" firstAttribute="leading" secondItem="7gl-W7-FoD" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="NXH-d4-QF2"/>
+                            <constraint firstItem="MxI-vc-ZM4" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="100" id="NAD-sy-H0C"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -74,7 +60,6 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
-                <relationship kind="action" name="pauseButtonEvent:"/>
                 <relationship kind="action" name="playButtonEvent:"/>
                 <relationship kind="action" name="stopButtonEvent:"/>
             </relationships>
